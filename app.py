@@ -53,19 +53,6 @@ def handle_message(event):
         pass
     elif event.message.text == 'ランキング':
         reply_line_bot(event)
-    elif event.message.text == '交通情報':
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text="駐車場の空き情報 (18:00更新)http://navimap.kcn-net.org/sightseeing.html#13/35.3277/139.5384 \n\n 134号沿い歩道の通行再開。下水圧送管の復旧受け稲村ガ崎で発生した地盤沈下による下水圧送管の破損を受けて、約2年にわたって通行止めが続いていた国道１３４号沿いの歩道の通行が、6月29日から再開されました。\n\n 鎌倉市民が悩む｢観光渋滞｣は解消できるかも江ノ電において、駅の外にまで行列ができた場合にあらかじめ発行した「沿線住民等証明書」を所持する住民を優先的に乗車させる実証実験が行われています。")
-        )
-    elif event.message.text == 'ごみの日':
-        # 鎌倉市の5374のページに遷移する
-        pass 
-    elif event.message.text == 'わたしの投稿':
-        pass
-    elif event.message.text == 'みんなのかまくら':
-        # 鎌倉市のHPを表示
-        pass
     elif re.match(r'^\d番に投票', event.message.text):
         if event.message.text == "1番に投票":
           vote("A2")
