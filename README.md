@@ -1,4 +1,4 @@
-# minnano-kamakura
+# みんなで広報！かまくら
 LINE Boot Awardsに向けて作成したアプリケーションです
 
 pythonのフレームワークflaskで起動します．
